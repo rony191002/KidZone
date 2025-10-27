@@ -1,0 +1,144 @@
+# ============================================
+# DEPENDENCIES
+# ============================================
+node_modules/
+*/node_modules/
+frontend/node_modules/
+backend/node_modules/
+.npm
+.yarn-integrity
+
+# ============================================
+# ENVIRONMENT VARIABLES (CRITICAL - NEVER COMMIT)
+# ============================================
+.env
+.env.*
+*.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+.local-env
+frontend/.env
+backend/.env
+.env.vercel
+
+# ============================================
+# BUILD OUTPUTS
+# ============================================
+dist/
+dist-ssr/
+build/
+.out/
+.vercel/
+frontend/dist/
+frontend/build/
+backend/dist/
+
+# ============================================
+# LOGS
+# ============================================
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+
+# ============================================
+# CACHE & TEMPORARY FILES
+# ============================================
+.cache
+.parcel-cache
+.rpt2_cache/
+.rts2_cache_cjs/
+.rts2_cache_es/
+.rts2_cache_umd/
+.nyc_output
+.eslintcache
+*.tmp
+*.temp
+.temp/
+
+# ============================================
+# RUNTIME & DATABASE
+# ============================================
+pids
+*.pid
+*.seed
+*.pid.lock
+data/
+mongodb/
+*.mongodb
+*.db
+
+# ============================================
+# COVERAGE REPORTS
+# ============================================
+coverage/
+*.lcov
+.nyc_output
+
+# ============================================
+# PACKAGE MANAGER SPECIFIC
+# ============================================
+.npm
+node_modules/.cache
+.pnp.*
+.yarn/cache
+.yarn/unplugged
+.yarn/build-state.yml
+.yarn/install-state.gz
+.pnpm-store/
+
+# ============================================
+# OS GENERATED FILES
+# ============================================
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+Desktop.ini
+
+# ============================================
+# IDE & EDITOR FILES
+# ============================================
+.vscode/*
+!.vscode/extensions.json
+.idea/
+*.swp
+*.swo
+*~
+*.sublime-*
+*.code-workspace
+
+# ============================================
+# SERVERLESS & DEPLOYMENT
+# ============================================
+.serverless/
+.serverless_nextjs/
+.next/
+.nuxt/
+.gatsby/
+.serverless/
+
+# ============================================
+# PACKED FILES
+# ============================================
+*.tgz
+*.tar.gz
+*.zip
+
+# ============================================
+# MISC
+# ============================================
+*.pid.lock
+*.seed
+.npmrc
+.tern-port
+.node_repl_history
+*.tsbuildinfo
