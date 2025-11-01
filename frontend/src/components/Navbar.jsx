@@ -33,7 +33,10 @@ const Navbar = () => {
         <div className="max-w-7xl mx-auto px-4">
           <div className="flex justify-between items-center h-16 text-white">
             {/* Logo */}
-            <Link to="/" className="text-2xl font-extrabold tracking-tight hover:text-cyan-300 transition-colors">
+            <Link
+              to="/"
+              className="text-2xl font-extrabold tracking-tight hover:text-cyan-300 transition-colors"
+            >
               KidZone
             </Link>
 
@@ -41,12 +44,15 @@ const Navbar = () => {
             <div className="flex items-center space-x-4 font-semibold">
               {user ? (
                 <>
-                  <span className="text-cyan-100">Welcome, {user.username}!</span>
+                  {/* Hide welcome on small screens */}
+                  <span className="hidden sm:inline text-cyan-100">
+                    Welcome, {user.username}!
+                  </span>
 
                   {user.role === 'parent' && (
                     <button
                       onClick={() => setShowKidModeModal(true)}
-                      className="bg-cyan-500 text-blue-900 px-4 py-2 rounded-lg hover:bg-cyan-400 transition-all"
+                      className="bg-cyan-500 text-blue-900 px-3 sm:px-4 py-2 rounded-lg hover:bg-cyan-400 transition-all text-sm sm:text-base"
                     >
                       Enter Kid Mode
                     </button>
@@ -54,7 +60,7 @@ const Navbar = () => {
 
                   <button
                     onClick={handleLogout}
-                    className="bg-red-500 text-white px-4 py-2 rounded-lg hover:bg-red-600 transition-all"
+                    className="bg-red-500 text-white px-3 sm:px-4 py-2 rounded-lg hover:bg-red-600 transition-all text-sm sm:text-base"
                   >
                     Logout
                   </button>
